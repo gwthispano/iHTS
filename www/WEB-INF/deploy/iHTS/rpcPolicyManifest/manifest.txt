@@ -1,0 +1,3 @@
+# Module iHTS
+# RPC service class, partial path of RPC policy file
+com.googlecode.gwtphonegap.client.log.shared.PhoneGapLogService, 1390F37CBEA5D261FDDD6BF5D2B728C4.gwt.rpc
