@@ -1,0 +1,26 @@
+.divContainerTable {
+	margin-top: 0%;
+	width: 100%;
+}
+
+.divButtonTable {
+	margin-bottom: 1%;
+}
+
+.deleteButtonTable {
+	font-size: 100%;
+	font-weight: bold;
+	color: black;
+}
+
+.newButtonTable {
+	font-size: 100%;
+	font-weight: bold;
+	color: black;
+}
+
+.dataGridTable {
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+	margin-bottom: 4px;
+}

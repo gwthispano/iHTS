@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:app="urn:import:com.ioon.ihtsclean.web.client.ui.component.appUserMessages"
+	xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+	
+	<ui:style src="../../resource/css/App.css" />
+	<ui:with field="mes" type='com.ioon.ihtsclean.web.client.i18n.appLogin.LoginMessages' />
+	
+<g:HTMLPanel>
+
+	<div style = "width: 50%; margin: 0 auto; height:50%">
+
+		<b:Form>
+  			<b:FieldSet>
+    			<b:Legend text="{mes.login}"></b:Legend>
+
+
+    			<b:FormGroup>
+      				<b:FormLabel for="formName" text="{mes.user}"></b:FormLabel>
+      				<b:TextBox placeholder="{mes.user}" ui:field="user"/>
+    			</b:FormGroup>
+    
+    
+    			<b:FormGroup>
+      				<b:FormLabel for="formPassword" text="{mes.password}"></b:FormLabel>
+      				<b:Input type="PASSWORD" ui:field="password"/>
+    			</b:FormGroup>
+
+
+    			<b:Button ui:field="acceptButtom" type="PRIMARY" text="{mes.accept}"></b:Button>
+  			</b:FieldSet>
+		</b:Form>
+
+
+	</div>		
+		
+<app:AppUserMessagesImpl ui:field="userMessages"/>
+	</g:HTMLPanel>
+</ui:UiBinder> 

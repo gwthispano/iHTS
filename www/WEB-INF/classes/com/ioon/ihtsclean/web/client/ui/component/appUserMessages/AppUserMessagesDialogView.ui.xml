@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style src="../../../resource/css/AppUserMessages.css" />
+		
+	<ui:with field='messages'
+		type='com.ioon.ihtsclean.web.client.AppMessages' />
+
+	<g:HTMLPanel>
+		<div class="{style.divResultMessage}">
+			<g:Label styleName='{style.message}' ui:field="messageLabel" />
+
+			<div class="{style.divButton}" width="1000%">
+				<table width="100%">
+					<tr>
+						<td align="center" width="100%">
+							<g:Button styleName="{style.acceptButton}" ui:field="acceptButton"
+								text='{messages.buttonAcceptText}' />
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 
